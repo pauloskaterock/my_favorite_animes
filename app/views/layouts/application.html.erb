@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Animes</title>
+    
+    <h4>https://github.com/pauloskaterock</h4>
+
+     <style>
+        
+        h1   {color: red;}
+        p   {color: black; }
+        h3  {color: orange;}
+        h3  {color: orange;}
+        h4  {color: purple;}
+        /* body {background-color: black;} */
+        <br>
+        </style> <br>
+
+ 
+
+
+  
+
+        
+
+
+<div class="box"></div>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

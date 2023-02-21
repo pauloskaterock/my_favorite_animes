@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @my_favorite_anime %>
+
+<div>
+  <%= link_to "Edit this my favorite anime", edit_my_favorite_anime_path(@my_favorite_anime) %> |
+  <%= link_to "Back to my favorite animes",   my_favorite_animes_path %>
+
+  <%= button_to "Destroy this my favorite anime", @my_favorite_anime, method: :delete %>
+</div>

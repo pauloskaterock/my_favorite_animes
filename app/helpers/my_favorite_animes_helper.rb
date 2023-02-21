@@ -1,0 +1,2 @@
+module MyFavoriteAnimesHelper
+end

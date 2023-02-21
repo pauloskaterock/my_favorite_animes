@@ -1,0 +1,32 @@
+<%= form_with(model: my_favorite_anime) do |form| %>
+  <% if my_favorite_anime.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(my_favorite_anime.errors.count, "error") %> prohibited this my_favorite_anime from being saved:</h2>
+
+      <ul>
+        <% my_favorite_anime.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :text, style: "display: block" %>
+    <%= form.text_field :text %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
